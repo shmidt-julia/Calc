@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 public class EverywhereCalculator {
     public static void main(String[] args) {
-        System.out.println("“EverywhereCalculator Started”, input your numbers and operation in next format - | operant1 action operant2, like 2 + 2 |: ");
+        System.out.println("\"EverywhereCalculator Started\", input your numbers and operation in next format - | operant1 action operant2, like 2 + 2 |: ");
         float rez = 0;
         boolean done = false;
         int p = 1;
@@ -25,7 +25,7 @@ public class EverywhereCalculator {
             //System.out.println("-123".matches("-?\\d+"));
 
             if ("Q".equals(upper) || "EXIT".equals(upper)) {
-                System.out.println("Thank you for using “EverywhereCalculator”.\n" +
+                System.out.println("Thank you for using \"EverywhereCalculator\".\n" +
                         "Developed by $developerName.\n" + "Send your suggestions to $GitHubLink.\n");
                 break;
             }
@@ -56,15 +56,23 @@ public class EverywhereCalculator {
                         switch (action) {
                             case "+":
                                 rez = operand1 + operand2;
+                                System.out.println("RESULT IS: " + rez);
+                                System.out.println("\nNext calculation: ");
                                 break;
                             case "-":
                                 rez = operand1 - operand2;
+                                System.out.println("RESULT IS: " + rez);
+                                System.out.println("\nNext calculation: ");
                                 break;
                             case "*":
                                 rez = operand1 * operand2;
-                                break;
+                                System.out.println("RESULT IS: " + rez);
+                                System.out.println("\nNext calculation: ");
+                               break;
                             case "%":
                                 rez = operand1 % operand2;
+                                System.out.println("RESULT IS: " + rez);
+                                System.out.println("\nNext calculation: ");
                                 break;
                             case "/":
                                 if (operand2 == 0) {
@@ -79,8 +87,8 @@ public class EverywhereCalculator {
                                 break;
 
                         }
-                        System.out.println("RESULT IS: " + rez);
-                        System.out.println("\nNext calculation: ");
+                        //System.out.println("RESULT IS: " + rez);
+                        //System.out.println("\nNext calculation: ");
                     }
                 } else {
                     System.out.println("Error!!! Input data in next format: operand1 action operand2, like 2 + 2");
