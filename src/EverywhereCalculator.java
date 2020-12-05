@@ -1,5 +1,5 @@
 import java.util.Scanner;
-
+//test
 public class EverywhereCalculator {
     public static void main(String[] args) {
         System.out.println("\"EverywhereCalculator Started\", input your numbers and operation in next format - | operant1 action operant2, like 2 + 2 |: ");
